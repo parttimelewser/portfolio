@@ -90,18 +90,18 @@ export default function Page(){
 
                         <p>
                         This is a little page where I detail my experience, decisions and reflections of my project and design involvement! 
-                        though slightly unserious and improper, i hope this page can serve useful to those pursuing similar projects or looking for insight into my abilities as an engineering student. 
+                        Though slightly unserious and improper, I hope this page can serve useful to those pursuing similar projects or looking for insight into my abilities as an engineering student. 
                         </p>
 
                         <p className = "mt-8">
-                        to fill space, here's some personable, fun facts about me!  
+                        To fill space, here's some personable, fun facts about me!  
                         </p>
 
                         <div className = "text-sm space-y-3 ml-1 italic bold ">
-                            <p className = "mt-8"> - i love to host dinner parties (friendsgiving,friendsmas, ALL of it)</p>
-                            <p> - i'm currently reading the "before the coffee gets cold" series! </p>
-                            <p> - i broke a blender in grade 6 because i forgot about a spoon i put in it </p>
-                            <p > - i'm left handed </p>
+                            <p className = "mt-8"> - I love to host dinner parties (friendsgiving,friendsmas, ALL of it)</p>
+                            <p> - I'm currently reading the "before the coffee gets cold" series! </p>
+                            <p> - I broke a blender in grade 6 because i forgot about a spoon i put in it </p>
+                            <p > - I'm left handed </p>
                         </div>
                     </div>
 
@@ -122,32 +122,32 @@ export default function Page(){
                         </h2>
 
                         <p className = "mb-4">
-                         i coded this website myself! using <b>Next.js</b> and <b>Tailwind CSS</b> :) 
+                         I coded this website myself! Using <b>Next.js</b> and <b>Tailwind CSS</b> :) 
                         </p>
 
                         <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4">
                          process
                         </h2>
                         <p className = "mb-2">
-                        i coded this portfolio using <b>Next.js</b> and <b>Tailwind CSS</b>! previous to this, i had little to no experience coding. only coding for class and an introductory certification to python during high school (<a href = "https://schulichignite.com/beginner/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel = "noopener referrer">schulich ignite</a>). 
-                        my motivation to make a portfolio stemmed from wanting to have a place to showcase my achievements and projects. i'm really proud of how it turned out given the amount of time (about a week) and learning-curve 
-                        i overcame approaching this project. originally, the design for this project was more complicated than my abilities are currently able to achieve. however, i recognize there is a lot of room for improvement
+                        I coded this portfolio using <b>Next.js</b> and <b>Tailwind CSS</b>! Previous to this, I had little to no experience coding. Only coding for class and an introductory certification to <b>Python</b> during high school (<a href = "https://schulichignite.com/beginner/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel = "noopener referrer">schulich ignite</a>). 
+                        My motivation to make a portfolio stemmed from wanting to have a place to showcase my achievements and projects. I'm really proud of how it turned out given the amount of time (about a week) and learning-curve 
+                        I overcame approaching this project. Originally, the design for this project was more complicated than my abilities are currently able to achieve. However, I recognize there is a lot of room for improvement
                         in the future, where those ideas may be useful :) 
                         </p>
 
                         <p className = "mb-2">
-                        i made the original wireframes using <b>Figma</b>, all of which are linked <a href = "https://www.figma.com/design/wHVaqFbZH5jz4eA16r4wAL/Portfolio?node-id=0-1&m=dev&t=H449c0exwjjeuTYF-1" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer" > here </a>!
+                        I made the original wireframes using <b>Figma</b>, all of which are linked <a href = "https://www.figma.com/design/wHVaqFbZH5jz4eA16r4wAL/Portfolio?node-id=0-1&m=dev&t=H449c0exwjjeuTYF-1" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer" > here </a>!
                         </p>
 
                         <p className = "mb-2">
-                        after some time, i realized it was really daunting to complete a project of this size. so i started by designing something more simple and with the help of the internet, i built this website! i found that trial and error
-                        provided the most useful learning experience for this task. after watching a video or two on the basics of <b>Next.js</b> and <b>Tailwind CSS</b>, it was easiest to have <a href = "https://nerdcave.com/tailwind-cheat-sheet" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer" >this</a> tailwind cheat sheet open and actively search 
-                        any questions i had considering layout and specific terminology for positioning and similar features. 
+                        After some time, I realized it was really daunting to complete a project of this size. So I started by designing something more simple and with the help of the internet, I built this website! I found that trial and error
+                        provided the most useful learning experience for this task. After watching a video or two on the basics of <b>Next.js</b> and <b>Tailwind CSS</b>, it was easiest to have <a href = "https://nerdcave.com/tailwind-cheat-sheet" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer" >this</a> Tailwind cheat sheet open and actively search 
+                        any questions I had considering layout and specific terminology for positioning and similar features. 
                         </p>
 
                         <p className = "mb-6">
-                         on this website, i really wanted to have some kind of typewriter animation. which was a learning curve to say the least. after scouring the internet i found a few links and examples (<a href = "https://vanntile.com/blog/composited-typing-animation/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a> and <a href = "https://dev.to/lazysock/make-a-typewriter-effect-with-tailwindcss-in-5-minutes-dc" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a>).
-                         to my understanding, the animation on the front page increases the width of the "item", here it is the text box as the animation progresses to incrementally reveal the text. here, the keywords in the <i>"className"</i> of the desired text are:
+                         On this website, I really wanted to have some kind of typewriter animation. Which was a learning curve to say the least. After scouring the internet I found a few links and examples (<a href = "https://vanntile.com/blog/composited-typing-animation/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a> and <a href = "https://dev.to/lazysock/make-a-typewriter-effect-with-tailwindcss-in-5-minutes-dc" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a>).
+                         To my understanding, the animation on the front page increases the width of the "item", here it is the text box as the animation progresses to incrementally reveal the text. Here, the keywords in the <i>"className"</i> of the desired text are:
                         </p>
 
                         <p className = "mb-1 text-sm ml-1">
@@ -167,8 +167,8 @@ export default function Page(){
                         </p>
 
                         <p className = "mb-6">
-                            to write out animations in <i>"tailwind.config.ts"</i>, they must be defined in animations and keyframes (in the <i>export default</i> function). 
-                            within the brackets of <i>"animation"</i>, the name, duration, pacing, repetition and when to apply certain styles is defined. it will look something like this -- 
+                            To write out animations in <i>"tailwind.config.ts"</i>, they must be defined in animations and keyframes (in the <i>export default</i> function). 
+                            Within the brackets of <i>"animation"</i>, the name, duration, pacing, repetition and when to apply certain styles is defined. It will look something like this -- 
                             <b> type: 'type 2.7s ease-out .8s 1 normal none'</b> with each kind of animation separated by commas.
                         </p>
 
@@ -181,7 +181,7 @@ export default function Page(){
                         <p className = "mb-6 text-sm ml-1"><b>none:</b> when to apply any styling before and after the animation (see also: forwards, backwards and both) </p>
 
                         <p className = "mb-4">
-                         the code in <i>"tailwind.config.ts"</i> should look similar to below. where the % in keyframes indicates at what point in the animation (0% being the beginning and 100% the end) to change an element, in this case the width or opacity.
+                         The code in <i>"tailwind.config.ts"</i> should look similar to below. Where the % in keyframes indicates at what point in the animation (0% being the beginning and 100% the end) to change an element, in this case the width or opacity.
                         </p>
 
                         <Image
@@ -198,8 +198,8 @@ export default function Page(){
                         </h2>
 
                         <p>
-                         personally, i'm really pleased with how the website turned out! though a bit finicky and a couple bugs, all of the animations and aesthetics feel very genuine and authentic to myself. most importantly, they are all functional. i'm proud of
-                         pulling this off and i hope that the amount of effort and time put into this project can be seen by those visiting this site! 
+                         Personally, I'm really pleased with how the website turned out! Though a bit finicky and a couple bugs, all of the animations and aesthetics feel very genuine and authentic to myself. Most importantly, they are all functional. I'm proud of
+                         pulling this off and I hope that the amount of effort and time put into this project can be seen by those visiting this site! 
                         </p>
                     </div>
 
@@ -215,8 +215,8 @@ export default function Page(){
                         </div>
 
                         <p className = "mt-10">
-                        current wip! i'm still learning rust (from <a href ="https://tourofrust.com/24_en.html" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer" >here</a> and <a href = "https://docs.rust-embedded.org/book/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a>)
-                        hopefully done by the end of january 2025 :) 
+                        Current wip! I'm still learning rust (from <a href ="https://tourofrust.com/24_en.html" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer" >here</a> and <a href = "https://docs.rust-embedded.org/book/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a>)
+                        Hopefully done by the end of January 2025 :) 
                         </p>
                     </div>
 
@@ -237,7 +237,7 @@ export default function Page(){
                         </h2>
 
                         <p className = "mb-4">
-                         also a current wip! we are also looking to finish in january 2025, at least the first prototype. we are currently designing and ordering the first pcb to test a 3x3 keyboard! 
+                         Also a current wip! We are also looking to finish in January 2025, at least the first prototype. we are currently designing and ordering the first pcb to test a 3x3 keyboard! 
                         </p>
 
                         <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4">
@@ -245,23 +245,23 @@ export default function Page(){
                         </h2>
 
                         <p className = "mb-2">
-                         working together with my friend, <a 
+                         Working together with my friend, <a 
                          href = "https://www.linkedin.com/in/hire-fred-yang/" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer">Fred </a> 
-                         we started with initally understanding the inner workings of a keyboard. in this project my role was to design the pcb while Fred worried more about the firmware and coding aspects of the project. 
-                         to begin, as usual, we looked on the internet and found a git repository that showed each step of how to build a keyboard (<a href ="https://github.com/ruiqimao/keyboard-pcb-guide" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a>).
-                         however, this repository didn't provide me with the proper insight into fully understand how the circuit worked. so i googled some more and found <a href ="https://www.youtube.com/watch?v=8WXpGTIbxlQ&ab_channel=JoeScotto" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">this video </a>
-                        which made it clear how to efficiently wire a basic keyboard. 
+                         we started with initally understanding the inner workings of a keyboard. In this project my role was to design the pcb while Fred worried more about the firmware and coding aspects of the project. 
+                         To begin, as usual, we looked on the internet and found a git repository that showed each step of how to build a keyboard (<a href ="https://github.com/ruiqimao/keyboard-pcb-guide" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a>).
+                         However, this repository didn't provide me with the proper insight into fully understand how the circuit worked. I googled some more and found <a href ="https://www.youtube.com/watch?v=8WXpGTIbxlQ&ab_channel=JoeScotto" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">this video </a>
+                         which made it clear how to efficiently wire a basic keyboard. 
                         </p>
 
                         <p className = "mb-6">
-                        commonly, technology follows a certain logic path to complete a task. generally it would look something like this --
+                        Commonly, technology follows a certain logic path to complete a task. Generally it would look something like this --
                         </p>
 
                         <p className = "mb-1 text-sm ml-1"><b>1. detect signal (something changes!)</b> -- sometimes this requires knowing how much something has changed or in what way</p>
                         <p className = "mb-6 text-sm ml-1"><b>2. signal changes something (we change something because of a change in the environment)</b> -- cause and effect! we want to achieve something based off of the fact that something changed</p>
 
                         <p className = "mb-2">
-                        for a keyboard to work you need to be able to detect which and when a key is pressed, here we are not really bothered with the question of how much something has changed. 
+                        For a keyboard to work you need to be able to detect which and when a key is pressed, here we are not really bothered with the question of how much something has changed. 
                         in this case, our signal would be an analog reading of the voltage at a particular point in the circuit. here, we are looking for HIGH or LOW. essentially if the switch is on or off. 
                         typically, this would require a connection directly from the circuit to a pin on a microcontroller -- one for each input signal (in this case, number of keys). 
                         however, most keyboards have around 100 keys and it would be ridiculous to have a microcontroller with 100 input pins on a small device like this. 
