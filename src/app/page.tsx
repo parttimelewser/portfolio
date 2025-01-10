@@ -111,7 +111,7 @@ export default function Home() {
 
                   <Image
                   className="rounded-2xl shadow-lg"
-                  src="/placeholder.JPG"
+                  src="/placeholder.jpg"
                   alt="rust image"
                   width={280}
                   height={100}
@@ -134,7 +134,7 @@ export default function Home() {
                 <Link className = " relative group flex-col justify-items-center" href = "/words#keyboard">
                   <Image
                   className="rounded-2xl shadow-lg"
-                  src="/placeholder.JPG"
+                  src="/placeholder.jpg"
                   alt="keyboard!"
                   width={280}
                   height={100}
@@ -143,12 +143,7 @@ export default function Home() {
 
                   <div className = "absolute inset-0 flex items-center justify-center bg-[#6B819F] sm:p-2 rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
                       <p> 
-                        Working with my friend, <a 
-                        href = "https://www.linkedin.com/in/hire-fred-yang/" 
-                        className = "text-[#CADABF]"
-                        target="_blank"
-                        rel="noopener referrer"
-                        >Fred</a> to working towards building a split keyboard capable of accomodating user's non-traditional typing habits! 
+                        Working with my friend, Fred to working towards building a split keyboard capable of accomodating user's non-traditional typing habits! 
                       </p>
                   </div>
 
@@ -163,7 +158,7 @@ export default function Home() {
                 <Link className = " relative group flex-col justify-items-center" href = "/words#pid">
                   <Image
                   className="rounded-2xl shadow-lg"
-                  src="/placeholder.JPG"
+                  src="/placeholder.jpg"
                   alt="pid"
                   width={280}
                   height={100}
@@ -191,7 +186,7 @@ export default function Home() {
                 <Link className = " relative group flex-col justify-items-center" href = "/words">
                   <Image
                   className="rounded-2xl shadow-lg"
-                  src="/capcap.JPG"
+                  src="/capcap.jpg"
                   alt="capcap"
                   width={280}
                   height={100}
@@ -201,13 +196,7 @@ export default function Home() {
                   <div className = "absolute inset-0 items-center justify-center bg-[#6B819F] rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
                     <div className = "flex-col items-justify-center items-center mt-20">
                         <p>
-                          <a
-                            href = "https://devpost.com/software/capcap-8xjrw7" 
-                            className = "text-[#CADABF]"
-                            target="_blank"
-                            rel="noopener referrer">
                             Hackcamp 2024 Winner!
-                          </a> 
                         </p>
                         <p className = "mt-8 sm:p-2">
                           Worked with some really cool people to design and build a facial recognition program quantifying a user's ability to focus when studying!
@@ -226,7 +215,7 @@ export default function Home() {
                 <Link className = "relative group flex-col justify-items-center" href = "/words">
                   <Image
                   className="rounded-2xl shadow-lg"
-                  src="/claw.JPG"
+                  src="/claw.jpg"
                   alt="claw"
                   width={280}
                   height={100}
@@ -248,7 +237,7 @@ export default function Home() {
                 <Link className = "relative group flex-col justify-items-center" href = "/words">
                   <Image
                   className="rounded-2xl shadow-lg"
-                  src="/chair.JPG"
+                  src="/chair.jpg"
                   alt="chair"
                   width={280}
                   height={100}
