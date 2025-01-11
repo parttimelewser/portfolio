@@ -186,7 +186,7 @@ export default function Page(){
 
                         <Image
                                 className="rounded-md mb-8 ml-1"
-                                src="/animationcode.PNG"
+                                src="/animationcode.png"
                                 alt="codecodecode"
                                 width={400}
                                 height={100}
@@ -262,14 +262,14 @@ export default function Page(){
 
                         <p className = "mb-2">
                         For a keyboard to work you need to be able to detect which and when a key is pressed, here we are not really bothered with the question of how much something has changed. 
-                        in this case, our signal would be an analog reading of the voltage at a particular point in the circuit. here, we are looking for HIGH or LOW. essentially if the switch is on or off. 
-                        typically, this would require a connection directly from the circuit to a pin on a microcontroller -- one for each input signal (in this case, number of keys). 
-                        however, most keyboards have around 100 keys and it would be ridiculous to have a microcontroller with 100 input pins on a small device like this. 
+                        In this case, our signal would be an analog reading of the voltage at a particular point in the circuit. Here, we are looking for HIGH or LOW. Essentially if the switch is on or off. 
+                        Typically, this would require a connection directly from the circuit to a pin on a microcontroller -- one for each input signal (in this case, number of keys). 
+                        However, most keyboards have around 100 keys and it would be ridiculous to have a microcontroller with 100 input pins on a small device like this. 
                         </p>
 
                         <p>
-                         instead, we can use diodes! simply put, a diode only allows current to flow in one direction. in practice, that means there will only be current in the branch of the circuit containing the diode under certain conditions (the diode is forward biased).
-                         with this knowledge, we are able to organize the keyboard like a grid. so that when a key is pressed, we are able to get the "coordinates" of the key using like 20 pins on the microcontroller. the signal would be returning a certain "row" and "column" to identify 
+                         Instead, we can use diodes! Simply put, a diode only allows current to flow in one direction. In practice, that means there will only be current in the branch of the circuit containing the diode under certain conditions (the diode is forward biased).
+                         With this knowledge, we are able to organize the keyboard like a grid. So that when a key is pressed, we are able to get the "coordinates" of the key using like 20 pins on the microcontroller. The signal would be returning a certain "row" and "column" to identify 
                          the pressed key rather than an individual signal for each key. 
                         </p>
 
@@ -299,24 +299,141 @@ export default function Page(){
                         </h2>
 
                         <p className = "mb-2">
-                         as a part of my IGEN 230 class, we had a semester to build a line-following robot to complete a series of three courses (see images below). we were provided with both an Arduino UNO and ESP-32 and a basic
-                         robot kit (including a chassis, two DC motors, IR sensors, and other required materials). my team was able to complete all three courses. my role in the project 
-                         involved designing and soldering the pcb, managing the power supply, and writing the pid code in <b>Arduino/C++ </b>. 
+                         As a part of my IGEN 230 class, we had a semester to build a line-following robot to complete a series of three courses (see images below). We were provided with both an Arduino UNO and ESP-32 and a basic
+                         robot kit (including a chassis, two DC motors, IR sensors, and other required materials). My team was able to complete all three courses. As a part of this project, 
+                         I was involved in designing and soldering the pcb, managing the power supply, and writing the pid code in <b>Arduino/C++ </b>. 
+                        </p>
+
+                        <p className = "mb-2">
+                         To begin, we made a couple executive decisions to determine the difficulty of the robot we wanted to build. These decisions were to use the ESP-32 rather than the Arduino Uno and to 
+                         attempt to achieve PID control. 
                         </p>
 
                         <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
                          process
                         </h2>
 
+                        <h3 className = "italic text-lg mb-2">
+                         circuitry and electronics
+                        </h3>
+
+                        <p className = "mb-2">
+                         In class, we started with setting up a simple circuit connecting only one IR sensor to the Arduino UNO and testing to the readings fluctated depending on the colour of a surface. 
+                         From here we propogated the circuit four more times and organized it neatly on a board. Initially, we used a potentiometer to be able to adjust the reading values of the sensors. 
+                         However, eventually we found that the readings were more stable if the potentiometer was shorted and the sensors directly connected. The resulting board had a schematic like below. 
+                        </p>
+
+                        <p className = "mb-2">
+                         In order to be able to see and use the values observed by from the sensors, we needed to connect it to the ESP-32. Each sensor requires one analog input connection.
+                         The H-bridge used to control the motors also required six pins on the ESP-32, four of which are digital and two as analog outputs (to control the speed of the motors). 
+                         The general pin-out of the ESP-32 is illustrated in the image below. 
+                        </p>
+
+                        <h3 className = "italic text-lg mb-2">
+                         sensor bracket and organization
+                        </h3>
+
                         <p>
-                         in class, we started with setting up a simple circuit connecting only one IR sensor to the Arduino UNO and testing to the readings fluctated depending on the colour of a surface. 
-                         this circuit followed the following schematic. 
+                         In order to attach the sensors to the chassis, our team designed a sensor bracket in <b>OnShape </b> capable of screwing into the premade holes in the chassis and holding 
+                         five IR sensors in a row facing the ground and the ultrasonic sensor in the front. This design was not interated too much as many of the issues could easily be fixed with post-processing 
+                         after printing. 
                         </p>
 
                         <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
                          outcome
                         </h2>
 
+                        <p>
+                         Overall, our project suceeded in completing three courses by overcoming 90 degree turns, larger than 90 degree turns, gaps and intersections in the course lines (demonstrated in the videos below). 
+                         I believe that further iterations on the sensor bracket would improve the reliability of our robot. If the sensors were space precisely such that if the central sensor is aligned with the track, 
+                         the two adjacent sensors would be placed just when the track width ends on either side. This way, any deviation from the track would quickly be detected, allowing for our robot to adjust quickly
+                         and run more smoothly. 
+                        </p>
+
+                    </div>
+
+                    <div id = "capcap" className = "mb-20">
+
+                        <div className = "flex flex-row sticky top-0 bg-white pb-1 w-full whitespace-nowrap">
+                            <h1 className = "font-[family-name:var(--font-rozha-one)] text-5xl w-3/4">
+                            open cv study-aid 
+                            </h1>
+
+                            <h1 className = "text-lg italic">
+                            November 2024
+                            </h1>
+                        </div>
+
+                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-10">
+                         project overview
+                        </h2>
+
+                        <p className = "mb-2">
+                          <b>2024 Hackcamp Winner! </b>I attended Hackcamp and met some really cool people (<a href = "https://www.linkedin.com/in/jocelynkwa/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Jocelyn</a>,
+                          <a href = "https://www.linkedin.com/in/isabellalinde/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer"> Isabella</a>, and <a href = "https://www.linkedin.com/in/brandonyeung-/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Brandon</a>)
+                         and together we built <a href = "https://devpost.com/software/capcap-8xjrw7" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer" >CapCap</a> (links to Devpost). 
+                          A website capable of tracking how much "studying time" a user spent focusing on their work. We build this using computer vision and facial recognition 
+                          to track when and where a user would look away from their screen. 
+                  
+                        </p>
+
+                        <p>
+                         My role in this project mainly consisted of product design and completing the deliverable requirements! Our <a href = "https://www.figma.com/proto/Qjth3JkTRqzRdqfX2V6Wyp/capcap?node-id=31-441&node-type=frame&t=4zjNgE69rvPXJDlS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A441" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Figma</a> and <a href = "https://github.com/byeung05/CapCap" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Git </a>are linked here :) 
+                        </p>
+                    </div>
+                    
+                    <div id = "claw" className = "mb-20">
+
+                        <div className = "flex flex-row sticky top-0 bg-white pb-1 w-full whitespace-nowrap">
+                            <h1 className = "font-[family-name:var(--font-rozha-one)] text-5xl w-3/4">
+                            arduino aluminum claw 
+                            </h1>
+
+                            <h1 className = "text-lg italic">
+                            January 2024 - February 2024
+                            </h1>
+                        </div>
+
+                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-10">
+                         project overview
+                        </h2>
+
+
+
+                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
+                         process
+                        </h2>
+
+                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
+                         outcome
+                        </h2>
+
+                        </div>
+                                <div id = "chair" className = "mb-20">
+
+                        <div className = "flex flex-row sticky top-0 bg-white pb-1 w-full whitespace-nowrap">
+                            <h1 className = "font-[family-name:var(--font-rozha-one)] text-5xl w-3/4">
+                            cardboard chair
+                            </h1>
+
+                            <h1 className = "text-lg italic">
+                            September 2023 - October 2023
+                            </h1>
+                        </div>
+
+                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-10">
+                         project overview
+                        </h2>
+
+                        
+
+                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
+                         process
+                        </h2>
+
+                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
+                         outcome
+                        </h2>
                     </div>
                 </section>
                 </div>

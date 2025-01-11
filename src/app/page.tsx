@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-      <div className="flex w-screen mt-40 ml-10 flex-wrap min-h-screen p-8 pb-20 gap-16 font-[family-name:var(--font-quattrocento)]">
+      <div className="flex w-full mt-40 ml-10 flex-wrap min-h-screen p-8 pb-20 gap-16 font-[family-name:var(--font-quattrocento)]">
         <section className="flex-col justify-items-center w-1/3">
 
           <span className="inline-flex overflow-hidden whitespace-nowrap animate-type text-5xl mb-8 font-[family-name:var(--font-rozha-one)]">
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div id = "projects" className = "flex flex-col w-screen mt-20">
+        <div id = "projects" className = "flex flex-col w-full mt-20">
           
             <div  className="sticky top-0 flex items-center flex-row sm:flex-row bg-[#7FA1C3] sm: p-2 z-10">
               <h1
@@ -260,7 +260,7 @@ export default function Home() {
         </div>
 
         <div
-          id = "resume" className = " w-screen flex-col justify-items-center sm:p-8 mt-20">
+          id = "resume" className = " w-full flex-col justify-items-center sm:p-8 mt-20">
           <h1
             className = "text-5xl font-[family-name:var(--font-rozha-one)]">
               / resume /
