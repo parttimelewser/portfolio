@@ -66,11 +66,11 @@ export default function Home() {
             </nav>
           </div>
           
-          <div className = "sm:p-8 mt-10">
+          <div className = "mt-8">
             <p>
-              I'm currently in my second year of <a href="https://www.integratedengineers.ca/" className = "text-[#CADABF] hover:text-[#6B819F]">Integrated Engineering</a> at UBC, hoping to specialize in
-              electromechanical applications and assemblies! Right now, I am obsessing over starting the new year by pursuing my interests in selling custom jewelry <a href="https://www.instagram.com/lewsworkshop/" className = "text-[#CADABF] hover:text-[#6B819F]">/@lewsworkshop/</a>, researching
-              micro-systems and sensors, all while making worthwhile memories with my friends. Some of my projects include a PID line-following robot, a split keyboard PCB and a motor controller using Rust! My top 2025 goals are to dive deeper into my career interests and to be more present with those around me :)
+              I'm currently in my second year of <a href="https://www.integratedengineers.ca/" className = "text-[#CADABF] hover:text-[#6B819F]" target="_blank" rel="noopener referrer">Integrated Engineering</a> at UBC, hoping to specialize in
+              MEMs and similar nanotechnologies! Right now, I am pursuing my interests in selling custom jewelry <a href="https://www.instagram.com/lewsworkshop/" className = "text-[#CADABF] hover:text-[#6B819F]" target="_blank" rel="noopener referrer">/@lewsworkshop/</a> and researching
+              alongside Prof. Edmond Cretu in the realm of signal processing for wearable technology in the emergency room. Some of my projects include a PID line-following robot and a split keyboard PCB! My top 2025 goals are to dive deeper into my career interests and to be more present with those around me :)
             </p>
           </div>
         </section>
@@ -107,12 +107,12 @@ export default function Home() {
             
             <section className = "flex flex-col justify-items-center gap-8 mt-10 mb-10">
               <section className = " flex sm:flex-row justify-center items-center w-full mt-20 gap-40">
-                <Link className = " relative group flex-col justify-items-center" href = "/words#motorcontrol">
+                <Link className = " relative group flex-col justify-items-center" href = "/words#lewsworkshop">
 
                   <Image
                   className="rounded-2xl shadow-lg"
-                  src="/placeholder.jpg"
-                  alt="rust image"
+                  src="/lewsworkshop.jpg"
+                  alt="lewsworkshop"
                   width={280}
                   height={100}
                   priority
@@ -120,14 +120,14 @@ export default function Home() {
 
                   <div className = "absolute inset-0 flex items-center justify-center sm:p-2 bg-[#6B819F] rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
                       <p>
-                        Taking the opportunity to learn Rust and introduce myself to embedded software by building a simple DC motor controller.
+                        Submitted for nwHacks 2025! Starting a small jewelry business that gives customers the opportunity to design and customize their own keychains, earrings and bracelets. (Hopefully at UBC's Makers Market in March 2025!)
                       </p> 
                   </div>
                   <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-xl ">
-                    Rust Motor Controller
+                    lewswork.shop
                   </h1>
                   <h1 className = "font-[family-name:var(--font-quattrocento)] text-md italic ">
-                    Rust
+                    Tailwind / Next.js / mongodb
                   </h1>
                 </Link> 
 
@@ -183,7 +183,7 @@ export default function Home() {
 
               <section className = " flex sm:flex-row justify-center items-center w-full mt-20 gap-40">
 
-                <Link className = " relative group flex-col justify-items-center" href = "/words">
+                <Link className = " relative group flex-col justify-items-center" href = "/words#capcap">
                   <Image
                   className="rounded-2xl shadow-lg"
                   src="/capcap.jpg"
@@ -212,7 +212,7 @@ export default function Home() {
                   </h1>
                 </Link> 
 
-                <Link className = "relative group flex-col justify-items-center" href = "/words">
+                <Link className = "relative group flex-col justify-items-center" href = "/words#claw">
                   <Image
                   className="rounded-2xl shadow-lg"
                   src="/claw.jpg"
@@ -234,7 +234,7 @@ export default function Home() {
                   </h1>
                 </Link> 
 
-                <Link className = "relative group flex-col justify-items-center" href = "/words">
+                <Link className = "relative group flex-col justify-items-center" href = "/words#chair">
                   <Image
                   className="rounded-2xl shadow-lg"
                   src="/chair.jpg"

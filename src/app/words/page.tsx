@@ -36,8 +36,8 @@ export default function Page(){
                         </a>
                         <a
                         className = "block hover:text-[#7FA1C3]"
-                        href = "#motorcontrol">
-                        rust motor controller
+                        href = "#lewsworkshop">
+                        lewswork.shop
                         </a>
                         <a
                         className = "block hover:text-[#7FA1C3]"
@@ -94,7 +94,7 @@ export default function Page(){
                         </p>
 
                         <p className = "mt-8">
-                        To fill space, here's some personable, fun facts about me!  
+                        To fill space, here's some fun facts about me!  
                         </p>
 
                         <div className = "text-sm space-y-3 ml-1 italic bold ">
@@ -203,20 +203,34 @@ export default function Page(){
                         </p>
                     </div>
 
-                    <div id = "motorcontrol" className = "mb-20">
+                    <div id = "lewsworkshop" className = "mb-20">
                         <div className = "flex flex-row sticky top-0 bg-white pb-1 w-full whitespace-nowrap">
                             <h1 className = "font-[family-name:var(--font-rozha-one)] text-5xl w-3/4">
-                            rust motor controller
+                            lewswork.shop
                             </h1>
 
                             <h1 className = "text-lg italic">
-                            December 2024 - Present
+                            January 2025 - Present
                             </h1>
                         </div>
 
-                        <p className = "mt-10">
-                        Current wip! I'm still learning rust (from <a href ="https://tourofrust.com/24_en.html" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer" >here</a> and <a href = "https://docs.rust-embedded.org/book/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">here</a>)
-                        Hopefully done by the end of January 2025 :) 
+                        <p className = "mt-10 mb-2">
+                        My friends (<a href = "https://www.linkedin.com/in/hire-fred-yang/" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer">Fred </a> and <a 
+                         href = "https://www.linkedin.com/in/isabellalinde/" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer">Isabella</a>) 
+                        and I are building a website to take the experience of designing and creating your own jewelry/gifts online!
+                        We started this project for nwHacks 2025. Here is the <a href = "https://devpost.com/software/lewswork-shop" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer">Devpost </a>and the <a href = "https://github.com/itlinde/lewsworkshop" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer"> Github </a> :) 
+                        </p>
+
+                        <p className = "mb-2">
+                        In the future we are hoping to implement online transactions using Stripe, improve the functionality, and potentially add a collaboration function! We are fully intending to participate in UBC's 
+                        March 2025 Makers Market with tablets available for customers to design digitally or in person. My role in this project is similar to a product manager! Though, I offer to help
+                        with the front-end, my friends  benefit more from this experience than me as I am not looking to break into the software sector. There is still a lot to learn for myself here as well, including branding and business analytics among others.
+                        When fully launched, lewsworkshop will provide me with a larger perspective to engineer with practicality and marketability in mind :) 
+
+                        </p>
+
+                        <p>
+                        If you are interested, please feel free to check out <a href = "https://www.lewswork.shop" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer"> our website! </a>
                         </p>
                     </div>
 
@@ -347,7 +361,7 @@ export default function Page(){
                          Overall, our project suceeded in completing three courses by overcoming 90 degree turns, larger than 90 degree turns, gaps and intersections in the course lines (demonstrated in the videos below). 
                          I believe that further iterations on the sensor bracket would improve the reliability of our robot. If the sensors were space precisely such that if the central sensor is aligned with the track, 
                          the two adjacent sensors would be placed just when the track width ends on either side. This way, any deviation from the track would quickly be detected, allowing for our robot to adjust quickly
-                         and run more smoothly. 
+                         and run more smoothly. In  addition, this would remove the issue when the line is occasionally not detected by any sensor when it is turning. 
                         </p>
 
                     </div>
@@ -398,7 +412,9 @@ export default function Page(){
                          project overview
                         </h2>
 
-
+                        <p className = "mb-2">
+                         This was one of my term 2 projects for APSC 100/101. 
+                        </p>
 
                         <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
                          process
