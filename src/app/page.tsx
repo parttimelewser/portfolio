@@ -3,295 +3,239 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-      <div className="flex w-full mt-40 ml-10 flex-wrap min-h-screen p-8 pb-20 gap-16 font-[family-name:var(--font-quattrocento)]">
-        <section className="flex-col justify-items-center w-1/3">
+      <div className="flex flex-col w-full h-full font-[family-name:var(--font-quattrocento)]">
+        
+        <div className = "grid grid-cols-8 h-10 sticky z-10 top-0 border-b items-center font-[family-name:var(--font-rozha-one)] bg-[#1A2C58]">
 
-          <span className="inline-flex overflow-hidden whitespace-nowrap animate-type text-5xl mb-8 font-[family-name:var(--font-rozha-one)]">
+          <a className = "text-lg hover:opacity-50 whitespace-nowrap ml-2" href = "#">
+            Olivia Lew
+          </a>
+          <nav className = "col-start-9">
+
+            <a className = "hover:opacity-50 p-4" href = "#aboutme">
+              about me
+            </a>
+
+            <a className = "hover:opacity-50 p-4" href = "#projects">
+              projects
+            </a>
+
+            <Link className = "hover:opacity-50 p-4" href = "/words">
+              documentation
+            </Link>
+          </nav>
+         </div>
+
+        <section className="flex-col justify-items-center mt-[36vh]">
+
+          <span className="inline-flex overflow-hidden whitespace-nowrap animate-type text-8xl mb-[12vh] font-[family-name:var(--font-rozha-one)]">
               Hi, I'm Olivia !
           </span>
           <span
-            className="box-border inline-block w-0.5 h-8 bg-[#EDEDED] animate-cursor will-change-transform "
+            className="box-border inline-block w-0.5 h-16 bg-[#EDEDED] animate-cursor will-change-transform "
           ></span>
 
-          <Image
-            className="rounded-2xl shadow-lg"
-            src="/olivia.JPG"
-            alt="oliviasface"
-            width={280}
-            height={100}
-            priority
-          />
-
-          <div className="flex gap-4 items-center flex-col sm:flex-row sm:p-8 mt-6">
+          <div className="flex items-center flex-row gap-8 mb-[15vh]">
             <a
-              className="rounded-full border border-solid border-white/[.5] transition-colors flex items-center justify-center hover:bg-[#CADABF] hover:text-[#B0C4A1] hover:border-[#B0C4A1]/[.7] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              className="hover:opacity-50"
               href="https://www.linkedin.com/in/olivia-lew "
               target="_blank"
               rel="noopener referrer"
             >
-              my linkedin
+              <Image
+                src = "/linkedin.png"
+                alt = "linkedin"
+                width = {60}
+                height = {60}
+                priority
+              />
             </a>
             <a
-              className="rounded-full border border-solid border-white/[.5] transition-colors flex items-center justify-center hover:bg-[#CADABF] hover:text-[#B0C4A1] hover:border-[#B0C4A1]/[.7] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              className="hover:opacity-50"
               href= "mailto: olivia.lew.515@gmail.com " 
               target="_blank"
               rel="noopener referrer"
             >
-              email me!
+              <Image
+                src = "/email.png"
+                alt = "email me"
+                width = {60}
+                height = {60}
+                priority
+              />
             </a>
           </div>
+
+          <h1 className = "p-4">
+            scroll for more!
+          </h1>
+
+          <a className = "hover:opacity-50" href = "#aboutme">
+            <Image
+              src = "/arrow.png"
+              alt = "arrow"
+              width = {10}
+              height = {60}
+              priority
+            />
+          </a>
         </section>
 
-        <section className="flex-col w-1/2">
-          <div  className="flex gap-4 items-center flex-row sm:flex-row sm:p-4">
-            <nav
-              className="text-2xl text-center font-[family-name:var(--font-rozha-one)] "
-            >
-              <a  className = "hover:text-[#B0C4A1] sm: p-8"
-                  href = "#projects">
-                  projects
-              </a>
+        <div className="grid grid-cols-4 w-full mt-[20vh]">
+          <div className = "flex flex-col col-start-2 items-justify-center" id = "aboutme">
+            <h1 className = "relative text-7xl font-[family-name:var(--font-rozha-one)] mb-16 whitespace-nowrap">
+              / about me /
+            </h1>
 
-              <a className = " hover:text-[#B0C4A1] sm: p-8"
-                href = "#resume"
-                >
-                  
-                resume
-              </a>
+            <div className = "relative flex justify-center col-start-2">
 
-              <Link className = " hover:text-[#B0C4A1] sm: p-8"
-                href = "/words">
-                documentation
-              </Link>
-            </nav>
+              <p className = "p-6 bg-[#FFFFFF] rounded-xl text-[#1A2C58] text-md absolute top-14 w-full">
+                I'm currently in my second year of <a href="https://www.integratedengineers.ca/" className = "text-[#6B819F] hover:italic font-[family-name:var(--font-rozha-one)]" target="_blank" rel="noopener referrer">Integrated Engineering</a> at UBC, hoping to specialize in
+                MEMs and similar nanotechnologies! Right now, I am pursuing my interests in selling custom jewelry <a href="https://www.instagram.com/lewsworkshop/" className = "text-[#6B819F] hover:italic font-[family-name:var(--font-rozha-one)]" target="_blank" rel="noopener referrer">/@lewsworkshop/</a> and researching
+                alongside Prof. Edmond Cretu in the realm of signal processing for wearable technology in the emergency room. Some of my projects include a PID line-following robot and a split keyboard PCB! My top 2025 goals are to dive deeper into my career interests and to be more present with those around me :)
+              </p>
+            
+                <Image
+                  src = "/tape.png"
+                  alt = "tape"
+                  width = {270}
+                  height = {75}
+                  priority
+                  className = "absolute top-0"
+                />
+            </div>
           </div>
-          
-          <div className = "mt-8">
+
+          <div className = "w-full h-auto relative">
+            <Image
+              src = "/olivia.png"
+              alt = "liv"
+              width = {400}
+              height = {500}
+              priority
+              className = "col-start-3 ml-[10vw]"
+            />
+          </div>
+        </div>
+
+        <div id = "projects" className = "mt-[25vh]">
+
+          <div className = "w-full justify-items-center">
+            <h1 className = "text-7xl font-[family-name:var(--font-rozha-one)] mb-[8vh] whitespace-nowrap">
+              / projects /
+            </h1>
             <p>
-              I'm currently in my second year of <a href="https://www.integratedengineers.ca/" className = "text-[#CADABF] hover:text-[#6B819F]" target="_blank" rel="noopener referrer">Integrated Engineering</a> at UBC, hoping to specialize in
-              MEMs and similar nanotechnologies! Right now, I am pursuing my interests in selling custom jewelry <a href="https://www.instagram.com/lewsworkshop/" className = "text-[#CADABF] hover:text-[#6B819F]" target="_blank" rel="noopener referrer">/@lewsworkshop/</a> and researching
-              alongside Prof. Edmond Cretu in the realm of signal processing for wearable technology in the emergency room. Some of my projects include a PID line-following robot and a split keyboard PCB! My top 2025 goals are to dive deeper into my career interests and to be more present with those around me :)
+              !! hover for a description // click for more info !!
             </p>
           </div>
-        </section>
 
-        <div id = "projects" className = "flex flex-col w-full mt-20">
-          
-            <div  className="sticky top-0 flex items-center flex-row sm:flex-row bg-[#7FA1C3] sm: p-2 z-10">
-              <h1
-                className = "w-1/3 text-center text-5xl font-[family-name:var(--font-rozha-one)]">
-                  / projects /
-              </h1>
-              
-              <nav
-                className=" w-1/2 text-2xl text-center gap-4 font-[family-name:var(--font-rozha-one)]"
-              >
-                <a  className = "hover:text-[#B0C4A1] sm: p-10"
-                    href = "">
-                    home
-                </a>
-
-                <a className = " hover:text-[#B0C4A1] sm: p-10"
-                  href = "#resume"
-                  >
-                    
-                  resume
-                </a>
-
-                <Link className = " hover:text-[#B0C4A1] sm: p-8"
-                href = "/words">
-                documentation
-              </Link>
-              </nav>
-            </div>
-            
             <section className = "flex flex-col justify-items-center gap-8 mt-10 mb-10">
               <section className = " flex sm:flex-row justify-center items-center w-full mt-20 gap-40">
-                <Link className = " relative group flex-col justify-items-center" href = "/words#lewsworkshop">
 
-                  <Image
-                  className="rounded-2xl shadow-lg"
-                  src="/lewsworkshop.jpg"
-                  alt="lewsworkshop"
-                  width={280}
-                  height={100}
-                  priority
-                  />
-
-                  <div className = "absolute inset-0 flex items-center justify-center sm:p-2 bg-[#6B819F] rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
-                      <p>
-                        Submitted for nwHacks 2025! Starting a small jewelry business that gives customers the opportunity to design and customize their own keychains, earrings and bracelets. (Hopefully at UBC's Makers Market in March 2025!)
-                      </p> 
-                  </div>
-                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-xl ">
+                <div className = "flex flex-col gap-2 place-items-center">
+                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-2xl ">
                     lewswork.shop
                   </h1>
-                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-md italic ">
+                  <Link className = "relative group" href = "/words#lewsworkshop">
+                    <Image
+                    className="rounded-3xl"
+                    src="/lewsworkshop.jpg"
+                   alt="lewsworkshop"
+                   width={280}
+                   height={100}
+                   priority
+                   />
+                   <p className = "absolute inset-0 flex items-center justify-center sm:p-2 bg-[#FFFFFF] rounded-2xl text-[#6B819F] text-center opacity-0 group-hover:opacity-100 transition duration-200">
+                    Submitted for nwHacks 2025! Starting a small jewelry business that gives customers the opportunity to design and customize their own keychains, earrings and bracelets. (Hopefully at UBC's Makers Market in March 2025!)
+                   </p> 
+                  </Link>
+
+                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-lg italic ">
                     Tailwind / Next.js / mongodb
                   </h1>
-                </Link> 
+                </div>
 
-                <Link className = " relative group flex-col justify-items-center" href = "/words#keyboard">
-                  <Image
-                  className="rounded-2xl shadow-lg"
-                  src="/placeholder.jpg"
-                  alt="keyboard!"
-                  width={280}
-                  height={100}
-                  priority
-                  />
-
-                  <div className = "absolute inset-0 flex items-center justify-center bg-[#6B819F] sm:p-2 rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
-                      <p> 
-                        Working with my friend, Fred to working towards building a split keyboard capable of accomodating user's non-traditional typing habits! 
-                      </p>
-                  </div>
-
-                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-xl ">
+                <div className = "flex flex-col gap-2 place-items-center">
+                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-2xl ">
                     Split Keyboard PCB
                   </h1>
-                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-md italic ">
+                  <Link className = "relative group" href = "/words#keyboard">
+                    <Image
+                    className="rounded-3xl"
+                    src="/placeholder.png"
+                   alt="keyboard"
+                   width={280}
+                   height={100}
+                   priority
+                   />
+                   <p className = "absolute inset-0 flex items-center justify-center sm:p-2 bg-[#FFFFFF] rounded-2xl text-[#6B819F] text-center opacity-0 group-hover:opacity-100 transition duration-200">
+                   Working with my friend, Fred to working towards building a split keyboard capable of accomodating user's non-traditional typing habits! 
+                   </p> 
+                  </Link>
+
+                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-lg italic ">
                     KiCad / PCB Design
                   </h1>
-                </Link> 
+                </div>
 
-                <Link className = " relative group flex-col justify-items-center" href = "/words#pid">
-                  <Image
-                  className="rounded-2xl shadow-lg"
-                  src="/placeholder.jpg"
-                  alt="pid"
-                  width={280}
-                  height={100}
-                  priority
-                  />
-
-                  <div className = "absolute inset-0 flex items-center justify-center bg-[#6B819F] sm:p-2 rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
-                      <p>
-                        Utilizing ESP-32, IR and ultrasonic sensors to smoothly follow a defined track while overcoming gaps, sharp turns and avoiding obstacles.
-                      </p> 
-                  </div>
-
-                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-xl ">
+                <div className = "flex flex-col gap-2 place-items-center">
+                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-2xl ">
                     PID Line-Following Robot
                   </h1>
-                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-md italic ">
-                    Arduino / C++ / OnShape / Soldering
+                  <Link className = "relative group" href = "/words#pid">
+                    <Image
+                    className="rounded-3xl"
+                    src="/placeholder.png"
+                   alt="pid"
+                   width={280}
+                   height={100}
+                   priority
+                   />
+                   <p className = "absolute inset-0 flex items-center justify-center sm:p-2 bg-[#FFFFFF] rounded-2xl text-[#6B819F] text-center opacity-0 group-hover:opacity-100 transition duration-200">
+                   Utilizing ESP-32, IR and ultrasonic sensors to smoothly follow a defined track while overcoming gaps, sharp turns and intersections!
+                   </p> 
+                  </Link>
+
+                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-lg italic ">
+                    C++ / OnShape / Soldering
                   </h1>
-                </Link> 
+                </div>
 
               </section>
 
               <section className = " flex sm:flex-row justify-center items-center w-full mt-20 gap-40">
 
-                <Link className = " relative group flex-col justify-items-center" href = "/words#capcap">
-                  <Image
-                  className="rounded-2xl shadow-lg"
-                  src="/capcap.jpg"
-                  alt="capcap"
-                  width={280}
-                  height={100}
-                  priority
-                  />
 
-                  <div className = "absolute inset-0 items-center justify-center bg-[#6B819F] rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
-                    <div className = "flex-col items-justify-center items-center mt-20">
-                        <p>
-                            Hackcamp 2024 Winner!
-                        </p>
-                        <p className = "mt-8 sm:p-2">
-                          Worked with some really cool people to design and build a facial recognition program quantifying a user's ability to focus when studying!
-                        </p>
-                      </div>
-                  </div>
-
-                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-xl ">
+              <div className = "flex flex-col gap-2 place-items-center">
+                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-2xl ">
                     Open CV Study-Aid
                   </h1>
-                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-md italic ">
-                    Figma / HTML / CSS
-                  </h1>
-                </Link> 
+                  <Link className = "relative group" href = "/words#capcap">
+                    <Image
+                    className="rounded-3xl"
+                    src="/capcap.jpg"
+                   alt="capcap"
+                   width={280}
+                   height={100}
+                   priority
+                   />
+                   <div className = "absolute inset-0 flex flex-col items-center justify-center sm:p-2 bg-[#FFFFFF] rounded-2xl text-[#6B819F] text-center opacity-0 group-hover:opacity-100 transition duration-200 ">
+                    <p className = "font-bold mb-2">
+                      Hackcamp 2024 Winner!
+                    </p>
+                    <p>
+                    Worked with some really cool people to design and build a facial recognition program quantifying a user's ability to focus when studying!
+                    </p>
+                   </div>
+                  </Link>
 
-                <Link className = "relative group flex-col justify-items-center" href = "/words#claw">
-                  <Image
-                  className="rounded-2xl shadow-lg"
-                  src="/claw.jpg"
-                  alt="claw"
-                  width={280}
-                  height={100}
-                  priority
-                  />
-                  
-                  <div className = "absolute inset-0 flex items-center justify-center bg-[#6B819F] rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-20 sm:p-2">
-                      Worked within a team to build a automated claw capable of picking up items of various shapes and sizes.  
-                  </div>
+                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-lg italic ">
+                    C++ / OnShape / Soldering
+                  </h1>
+                </div>
 
-                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-xl ">
-                    Arduino Aluminum Claw
-                  </h1>
-                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-md italic ">
-                    Servo Motors / Machining
-                  </h1>
-                </Link> 
-
-                <Link className = "relative group flex-col justify-items-center" href = "/words#chair">
-                  <Image
-                  className="rounded-2xl shadow-lg"
-                  src="/chair.jpg"
-                  alt="chair"
-                  width={280}
-                  height={100}
-                  priority
-                  />
-                  
-                  <div className = "absolute inset-0 flex items-center justify-center bg-[#6B819F] rounded-2xl text-white text-center opacity-0 group-hover:opacity-100 transition duration-200">
-                      Designed a portable cardboard chair capable of being withstand a load of 100lbs and be assembled within 30s. 
-                  </div>
-
-                  <h1 className = "mt-4 font-[family-name:var(--font-rozha-one)] text-xl ">
-                    Cardboard Chair
-                  </h1>
-                  <h1 className = "font-[family-name:var(--font-quattrocento)] text-md italic ">
-                    Design Process / Technical Teamwork
-                  </h1>
-                </Link> 
                 </section>
             </section>
-        </div>
-
-        <div
-          id = "resume" className = " w-full flex-col justify-items-center sm:p-8 mt-20">
-          <h1
-            className = "text-5xl font-[family-name:var(--font-rozha-one)]">
-              / resume /
-          </h1>
-          <div  className="flex gap-4 items-center flex-row sm:flex-row">
-            <nav
-              className="text-2xl text-center sm:p-8 font-[family-name:var(--font-rozha-one)] "
-            >
-              <a  className = "hover:text-[#B0C4A1] sm: p-8"
-                  href = "">
-                  home
-              </a>
-
-              <a className = " hover:text-[#B0C4A1] sm: p-8"
-                href = "#projects"
-                >
-                  
-                projects
-              </a>
-
-              <Link className = " hover:text-[#B0C4A1] sm: p-8"
-                href = "/words">
-                documentation
-              </Link>
-            </nav>
-          </div>
-          <iframe
-            src = "/resume.pdf"
-            className = "w-full h-screen"
-          >
-          </iframe>
         </div>
 
       </div>

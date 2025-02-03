@@ -58,21 +58,6 @@ export default function Page(){
                         href = "#capcap">
                         open cv study-aid
                         </a>
-                        <a
-                        className = "block hover:text-[#7FA1C3]"
-                        href = "#claw">
-                        arduino aluminum claw
-                        </a>
-
-                        <h2 className =  "font-[family-name:var(--font-rozha-one)]">
-                        2023
-                        </h2>
-                        <a
-                        className = "block hover:text-[#7FA1C3]"
-                        href = "#chair">
-                        cardboard chair
-                        </a>
-                    
                     </nav>
                 </section>
 
@@ -394,62 +379,6 @@ export default function Page(){
                         <p>
                          My role in this project mainly consisted of product design and completing the deliverable requirements! Our <a href = "https://www.figma.com/proto/Qjth3JkTRqzRdqfX2V6Wyp/capcap?node-id=31-441&node-type=frame&t=4zjNgE69rvPXJDlS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A441" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Figma</a> and <a href = "https://github.com/byeung05/CapCap" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Git </a>are linked here :) 
                         </p>
-                    </div>
-                    
-                    <div id = "claw" className = "mb-20">
-
-                        <div className = "flex flex-row sticky top-0 bg-white pb-1 w-full whitespace-nowrap">
-                            <h1 className = "font-[family-name:var(--font-rozha-one)] text-5xl w-3/4">
-                            arduino aluminum claw 
-                            </h1>
-
-                            <h1 className = "text-lg italic">
-                            January 2024 - February 2024
-                            </h1>
-                        </div>
-
-                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-10">
-                         project overview
-                        </h2>
-
-                        <p className = "mb-2">
-                         This was one of my term 2 projects for APSC 100/101. 
-                        </p>
-
-                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
-                         process
-                        </h2>
-
-                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
-                         outcome
-                        </h2>
-
-                        </div>
-                                <div id = "chair" className = "mb-20">
-
-                        <div className = "flex flex-row sticky top-0 bg-white pb-1 w-full whitespace-nowrap">
-                            <h1 className = "font-[family-name:var(--font-rozha-one)] text-5xl w-3/4">
-                            cardboard chair
-                            </h1>
-
-                            <h1 className = "text-lg italic">
-                            September 2023 - October 2023
-                            </h1>
-                        </div>
-
-                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-10">
-                         project overview
-                        </h2>
-
-                        
-
-                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
-                         process
-                        </h2>
-
-                        <h2 className = "font-[family-name:var(--font-rozha-one)] text-2xl mb-4 mt-4">
-                         outcome
-                        </h2>
                     </div>
                 </section>
                 </div>
