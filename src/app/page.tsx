@@ -81,7 +81,7 @@ export default function Home() {
           </a>
         </section>
 
-        <div className="grid grid-cols-4 w-full mt-[20vh]">
+        <div className="grid grid-cols-4 w-full mt-[20vh] mb-[32vh]">
           <div className = "flex flex-col col-start-2 items-justify-center" id = "aboutme">
             <h1 className = "relative text-7xl font-[family-name:var(--font-rozha-one)] mb-16 whitespace-nowrap">
               / about me /
@@ -89,7 +89,7 @@ export default function Home() {
 
             <div className = "relative flex justify-center col-start-2">
 
-              <p className = "p-6 bg-[#FFFFFF] rounded-xl text-[#1A2C58] text-md absolute top-14 w-full">
+              <p className = "p-6 bg-[#FFFFFF] rounded-xl text-[#1A2C58] text-md absolute top-14 w-full min-w-96">
                 I'm currently in my second year of <a href="https://www.integratedengineers.ca/" className = "text-[#6B819F] hover:italic font-[family-name:var(--font-rozha-one)]" target="_blank" rel="noopener referrer">Integrated Engineering</a> at UBC, hoping to specialize in
                 MEMs and similar nanotechnologies! Right now, I am pursuing my interests in selling custom jewelry <a href="https://www.instagram.com/lewsworkshop/" className = "text-[#6B819F] hover:italic font-[family-name:var(--font-rozha-one)]" target="_blank" rel="noopener referrer">/@lewsworkshop/</a> and researching
                 alongside Prof. Edmond Cretu in the realm of signal processing for wearable technology in the emergency room. Some of my projects include a PID line-following robot and a split keyboard PCB! My top 2025 goals are to dive deeper into my career interests and to be more present with those around me :)
@@ -101,12 +101,12 @@ export default function Home() {
                   width = {270}
                   height = {75}
                   priority
-                  className = "absolute top-0"
+                  className = "absolute top-0 min-w-64"
                 />
             </div>
           </div>
 
-          <div className = "w-full h-auto relative">
+          <div className = "w-full min-w-96 h-auto relative">
             <Image
               src = "/olivia.png"
               alt = "liv"
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id = "projects" className = "mt-[25vh]">
+        <div id = "projects">
 
           <div className = "w-full justify-items-center">
             <h1 className = "text-7xl font-[family-name:var(--font-rozha-one)] mb-[8vh] whitespace-nowrap">
@@ -230,7 +230,7 @@ export default function Home() {
                   </Link>
 
                   <h1 className = "font-[family-name:var(--font-quattrocento)] text-lg italic ">
-                    C++ / OnShape / Soldering
+                   Figma / HTML / CSS
                   </h1>
                 </div>
 

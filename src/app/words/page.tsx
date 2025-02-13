@@ -29,6 +29,7 @@ export default function Page(){
                         <h2 className =  "font-[family-name:var(--font-rozha-one)]">
                          2025
                         </h2>
+                        
                         <a
                         className = "block hover:text-[#7FA1C3]"
                         href = "#portfolio">
@@ -209,14 +210,46 @@ export default function Page(){
                         <p className = "mb-2">
                         In the future we are hoping to implement online transactions using Stripe, improve the functionality, and potentially add a collaboration function! We are fully intending to participate in UBC's 
                         March 2025 Makers Market with tablets available for customers to design digitally or in person. My role in this project is similar to a product manager! Though, I offer to help
-                        with the front-end, my friends  benefit more from this experience than me as I am not looking to break into the software sector. There is still a lot to learn for myself here as well, including branding and business analytics among others.
-                        When fully launched, lewsworkshop will provide me with a larger perspective to engineer with practicality and marketability in mind :) 
+                        with the front-end, my friends  benefit more from this experience than me as I am not looking to break into the software sector. There is still a lot to learn for myself here as well, including branding and business analytics among others. 
 
                         </p>
 
-                        <p>
-                        If you are interested, please feel free to check out <a href = "https://www.lewswork.shop" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer"> our website! </a>
+                        <p className = "text-lg text-bold">
+                        Feel free to check out <a href = "https://www.lewswork.shop" className = "text-[#7FA1C3] hover:italic" target="_blank" rel="noopener referrer"> our website! </a>
+                        Below are some earrings I've made :)
                         </p>
+
+                        <div className = "w-full flex flex-row gap-40 justify-center mt-10">
+
+                            <Image
+
+                                src = "/earrings1.png"
+                                alt = "earrings1"
+                                width = {160}
+                                height = {200}
+                                priority
+                            />
+
+                            <Image
+
+                                src = "/earrings2.png"
+                                alt = "earrings2"
+                                width = {160}
+                                height = {200}
+                                priority
+                            />
+
+                            <Image
+
+                                src = "/earrings3.png"
+                                alt = "earrings2"
+                                width = {160}
+                                height = {200}
+                                priority
+                            />
+
+
+                        </div>
                     </div>
 
                     <div id = "keyboard" className = "mb-20">
@@ -371,14 +404,17 @@ export default function Page(){
                           <b>2024 Hackcamp Winner! </b>I attended Hackcamp and met some really cool people (<a href = "https://www.linkedin.com/in/jocelynkwa/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Jocelyn</a>,
                           <a href = "https://www.linkedin.com/in/isabellalinde/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer"> Isabella</a>, and <a href = "https://www.linkedin.com/in/brandonyeung-/" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Brandon</a>)
                          and together we built <a href = "https://devpost.com/software/capcap-8xjrw7" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer" >CapCap</a> (links to Devpost). 
-                          A website capable of tracking how much "studying time" a user spent focusing on their work. We build this using computer vision and facial recognition 
+                          A website capable of tracking how much "studying time" a user spent focusing on their work. We built this using computer vision and facial recognition 
                           to track when and where a user would look away from their screen. 
                   
                         </p>
 
-                        <p>
+                        <p className = "mb-16">
                          My role in this project mainly consisted of product design and completing the deliverable requirements! Our <a href = "https://www.figma.com/proto/Qjth3JkTRqzRdqfX2V6Wyp/capcap?node-id=31-441&node-type=frame&t=4zjNgE69rvPXJDlS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A441" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Figma</a> and <a href = "https://github.com/byeung05/CapCap" className = "text-[#7FA1C3] hover:italic" target = "_blank" rel="noopener referrer">Git </a>are linked here :) 
+                         Below is our submitted pitch for HackCamp!
                         </p>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9jPReGtRcwQ?si=ROfgVlzApipWrfql" allowFullScreen></iframe>             
                     </div>
                 </section>
                 </div>
